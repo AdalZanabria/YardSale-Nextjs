@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  env: {
+  /* env: {
     customKey: 'customValue',
   },
   basePath: '/dist',
@@ -14,7 +14,7 @@ const nextConfig = {
         permanent: true,
       },
     ];
-  },
+  }, */
 };
 
 module.exports = nextConfig;
