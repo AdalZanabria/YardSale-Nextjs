@@ -12,10 +12,10 @@ const OrderItem = ({ product }) => {
   return (
     <div className={styles.OrderItem}>
       <figure>
-        <img src={product.images[0]} alt={product.title} />
+        <img src={product?.images[0]} alt={product?.title} />
       </figure>
-      <p>{product.title}</p>
-      <p>{product.price}</p>
+      <p>{product?.title}</p>
+      <p>{product?.price}</p>
       <img src={close} alt="close" className="close" onClick={() => handleRemove(product)} />
     </div>
   );
