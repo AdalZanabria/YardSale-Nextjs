@@ -4,12 +4,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          <title>YardSale</title>
-          {/* <script dangerouslySetInnerHTML={
-              __html:`Google Analytics text`
-          }/> */}
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />
