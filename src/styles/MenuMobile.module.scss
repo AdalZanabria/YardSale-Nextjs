@@ -1,0 +1,33 @@
+@import 'vars';
+
+.MenuMobile {
+  padding: 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+.MenuMobile a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+.MenuMobile ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+.MenuMobile ul:nth-child(1) {
+  border-bottom: 1px solid var(--very-light-pink);
+}
+.MenuMobile ul li {
+  margin-bottom: 24px;
+}
+.MenuMobile .email {
+  font-size: var(--sm);
+  font-weight: 300;
+}
+.MenuMobile .sign-out {
+  color: var(--hospital-green);
+  font-size: var(--sm);
+}
