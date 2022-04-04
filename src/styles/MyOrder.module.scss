@@ -1,13 +1,13 @@
 @import 'vars';
 
-/* @keyframes swipeLeft {
+@keyframes swipeLeft {
   0% {
     width: 0;
   }
   100% {
     width: 360px;
   }
-} */
+}
 
 .MyOrder {
   width: 360px;
@@ -20,7 +20,8 @@
   bottom: auto;
   border-radius: 6px;
   border: 1px solid $--very-light-pink;
-  // animation: swipeLeft 0.26s ease;
+  z-index: 1;
+  animation: swipeLeft 0.26s ease;
 }
 .title-container {
   display: flex;

@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import OrderItem from '@components/OrderItem';
 import AppContext from '@context/AppContext';
-import arrow from '@icons/flechita.svg';
 import styles from '@styles/MyOrder.module.scss';
 
 const MyOrder = () => {
@@ -19,7 +18,7 @@ const MyOrder = () => {
     <aside className={styles.MyOrder}>
       <div className={styles['MyOrder-container']}>
         <div className={styles['title-container']}>
-          <Image src={arrow} alt="arrow" />
+          <img src="/icons/flechita.svg" alt="arrow" />
           <p className={styles.title}>My Order</p>
         </div>
 

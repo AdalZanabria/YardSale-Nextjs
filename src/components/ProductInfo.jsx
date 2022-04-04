@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import addToCart from '@icons/bt_add_to_cart.svg';
 import styles from '@styles/ProductInfo.module.scss';
 
 const ProductInfo = () => {
@@ -15,7 +14,7 @@ const ProductInfo = () => {
           voluptatem enim repudiandae eos maxime?
         </p>
         <button className={(styles['primary-button'], styles['add-to-cart-button'])}>
-          <Image src={addToCart} alt="Add to cart" />
+          <img src="/icons/bt_add_to_cart.svg" alt="Add to cart" />
           Add to cart
         </button>
       </div>

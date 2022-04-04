@@ -4,9 +4,6 @@ import Image from 'next/image';
 import Menu from '@components/MenuDesktop';
 import MyOrder from '@containers/MyOrder';
 import AppContext from '@context/AppContext';
-import menu from '@icons/icon_menu.svg';
-import logo from '@logos/logo_yard_sale.svg';
-import shoppingCart from '@icons/icon_shopping_cart.svg';
 import styles from '@styles/Header.module.scss';
 
 const Header = () => {
@@ -19,11 +16,13 @@ const Header = () => {
   };
   return (
     <nav className={styles.Nav}>
-      <Image src={menu} alt="menu" className={styles.menu} />
+      <img src="/icons/icon_menu.svg" layout="fill" className={styles.menu} alt="menu" />
       <div className={styles['navbar-left']}>
-        <Link href="/">
-          <Image src={logo} alt="logo" className={styles['nav-logo']} />
-        </Link>
+        <figure className={styles['nav-logo']}>
+          <Link href="/">
+            <img src="/logos/logo_yard_sale.svg" alt="logo" />
+          </Link>
+        </figure>
         <ul>
           <li>
             <a href="/">All</a>
@@ -51,7 +50,7 @@ const Header = () => {
             correo@ejemplo.com
           </li>
           <li className={styles['navbar-shopping-cart']} onClick={() => setToggleOrders(!toggleOrders)}>
-            <Image src={shoppingCart} alt="shopping cart" />
+            <img src="/icons/icon_shopping_cart.svg" alt="shopping cart" />
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
         </ul>
