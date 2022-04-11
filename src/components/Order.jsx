@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '@styles/Order.module.scss';
+import flechita from 'public/icons/flechita.svg';
 
 const Order = () => {
   return (
@@ -10,7 +11,7 @@ const Order = () => {
         <span>6 artículos</span>
       </p>
       <p>$560.00</p>
-      <img src="/icons/flechita.svg" alt="View Order" />
+      <Image src={flechita} alt="View Order" />
     </div>
   );
 };

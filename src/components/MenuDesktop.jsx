@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from '@styles/MenuDesktop.module.scss';
 
 const MenuDesktop = () => {
@@ -6,15 +7,13 @@ const MenuDesktop = () => {
     <div className={styles.MenuDesktop}>
       <ul>
         <li>
-          <a href="/" className="title">
-            My orders
-          </a>
+          <Link href="/">My orders</Link>
         </li>
         <li>
-          <a href="/">My account</a>
+          <Link href="/">My account</Link>
         </li>
         <li>
-          <a href="/">Sign out</a>
+          <Link href="/">Sign out</Link>
         </li>
       </ul>
     </div>

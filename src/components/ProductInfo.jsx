@@ -1,11 +1,10 @@
 import React from 'react';
-import Image from 'next/image';
 import styles from '@styles/ProductInfo.module.scss';
 
 const ProductInfo = () => {
   return (
     <>
-      <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product image" />
+      <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product" />
       <div className={styles.ProductInfo}>
         <p>$35.00</p>
         <p>Bike</p>
